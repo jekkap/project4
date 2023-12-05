@@ -103,6 +103,7 @@ if (document.URL.includes("caseopening.html")) {
             if (randKnifeChance === 49) {
                 caseWin.src = caseData[caseNum].contains_rare[randKnife].image;
                 itemDesc.innerText = caseData[caseNum].contains_rare[randKnife].name;
+                itemDesc.style.color = 'red';
             } else {
                 caseWin.classList.add("casefadeout");
                 caseWin.src = caseData[caseNum].contains[randItem].image;
@@ -114,6 +115,7 @@ if (document.URL.includes("caseopening.html")) {
                 caseOpen.disabled = false;
                 caseWin.classList.add("casefadein");
                 caseWin.src = caseData[caseNum].image;
+                itemDesc.style.color = 'orange';
                 itemDesc.innerText = "Item description will appear here!";
                 caseWin.classList.remove("casefadeout");
                 caseOpen.classList.remove("btndisabled");
