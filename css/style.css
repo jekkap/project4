@@ -11,8 +11,24 @@ body {
 h1 {
     color: rgb(255, 183, 1);
     font-family: csgofont;
-    font-size: 55px;
+    font-size: 40pt;
     text-align: center;
+}
+
+h2 {
+    color: rgb(255, 183, 1);
+    font-family: csgofont;
+    font-size: 30pt;
+    text-align: center;
+}
+
+p {
+    color: rgb(255, 194, 40);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 14pt;
+    margin-left: 18%;
+    margin-right: 18%;
+    text-indent: 15px;
 }
 
 .casename {
@@ -65,11 +81,18 @@ li:hover {
 a {
     color: rgb(255, 183, 1);
     text-decoration: none;
+    margin-left: 70px;
 }
 
 a:hover {
     color: rgb(255, 183, 1);
     text-decoration: underline;
+}
+
+.csgoapishoutout {
+    color: rgb(255, 183, 1);
+    text-decoration: none;
+    margin-left: 0px;
 }
 
 /*Images*/
@@ -154,18 +177,18 @@ a:hover {
 /*Grid*/
 .parentgrid {
     display: grid;
-    grid-template-rows: 1fr 0.5fr 1fr;
-    margin-left: 20%;
-    margin-right: 20%;
+    grid-template-rows: 1fr;
+    justify-content: space-evenly;
 }
 
 .childgrid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    justify-content: space-evenly;
-    justify-items: center;
-    align-content: space-evenly;
-    align-items: center;
+}
+
+.casespace {
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 .bphbparent {
@@ -199,22 +222,27 @@ a:hover {
 
 @media screen and (max-width: 1000px) {
 
-    body {
-        margin-left: 3%;
-        margin-right: 3%;
-    }
-
     /*Titles and Text*/
 
     h1 {
         font-size: 31pt;
     }
 
+    h2 {
+        font-size: 21pt;
+    }
+
+    p {
+        font-size: 12pt;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
     li {
         font-size: 18pt;
         margin-left: auto;
         margin-right: auto;
-        padding-right: auto;
+        padding-right: 70px;
     }
 
     .itemdesc {
@@ -239,6 +267,11 @@ a:hover {
     }
 
     /*Grid*/
+
+    .childgrid {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
 
     .bphbchild {
         display: grid;
